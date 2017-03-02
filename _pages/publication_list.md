@@ -1,7 +1,6 @@
 ---
 layout: single
 title:  "Publication List"
-permalink: /publications/
 ---
 
 #2017

@@ -9,7 +9,7 @@ theme: minimal-mistakes-jekyll
 
 # Site Settings
 locale                   : "en"
-title                    : "Martin Robinson"
+title                    : "The Life and Adventures of..."
 title_separator          : "-"
 name                     : "Martin Robinson"
 description              : "An academic blog with a mix of mathematics and software engineering."
@@ -81,8 +81,8 @@ analytics:
 author:
   name             : "Martin Robinson"
   avatar           : /assets/images/myPhoto.jpg
-  bio              : "A postdoc at the Computer Science Dept. University of Oxford."
-  location         : "Somewhere"
+  bio              : "research software engineer and proud father of two."
+  location         : "University of Oxford"
   email            : martin.robinson@cs.ox.ac.uk
   uri              :
   bitbucket        : martinjrobins
@@ -112,6 +112,7 @@ author:
 include:
   - .htaccess
   - _pages
+  - _projects
 exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"
@@ -242,6 +243,13 @@ compress_html:
   ignore:
     envs: development
 
+collections:
+    projects:
+        output: true
+        permalink: /:collection/:path/
+    pages:
+        output: true
+        permalink: /:path/
 
 # Defaults
 defaults:
@@ -257,7 +265,17 @@ defaults:
       share: true
       related: true
 
-defaults:
+  # _projects
+  - scope:
+      path: ""
+      type: projects
+    values:
+      layout: single
+      author_profile: false
+      sidebar:
+        nav: "projects"
+      share: true
+
   # _pages
   - scope:
       path: ""
