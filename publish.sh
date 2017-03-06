@@ -7,6 +7,7 @@ if [ -d "$destination_dir" ]; then
     echo "building to ${destination_dir}"
     jekyll build --destination ${destination_dir}
     cd ${destination_dir}
+    cp -R .git ~/tmp/
     rm -rf .git
     git init
     git add .
