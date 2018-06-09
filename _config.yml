@@ -9,10 +9,10 @@ theme: minimal-mistakes-jekyll
 
 # Site Settings
 locale                   : "en"
-title                    : "The Life and Adventures of..."
+title                    : "A wafer thin bite of computation"
 title_separator          : "-"
 name                     : "Martin Robinson"
-description              : "An academic blog with a mix of mathematics and software engineering."
+description              : "An blog with a mix of mathematics and software engineering."
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : martinjrobins/blog 
